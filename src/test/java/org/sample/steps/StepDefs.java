@@ -16,8 +16,8 @@ public class StepDefs {
         System.out.println("the user is on the login page");
     }
 
-    @When("the user enters valid credentials")
-    public void userEntersValidCredentials() {
+    @When("the user enters {string} credentials")
+    public void userEntersValidCredentials(String credentials) {
         System.out.println("the user enters valid credentials");
     }
 
