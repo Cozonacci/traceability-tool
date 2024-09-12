@@ -8,5 +8,6 @@ import static io.cucumber.junit.platform.engine.Constants.*;
 @SelectClasspathResource("features")
 @ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "json:target/cucumber.json, org.sample.config.TraceabilityListener")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "org.sample")
+@ConfigurationParameter(key = FILTER_TAGS_PROPERTY_NAME, value = "not @WIP")
 public class RunCucumberTests {
 }
