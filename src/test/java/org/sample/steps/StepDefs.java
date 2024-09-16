@@ -18,6 +18,9 @@ public class StepDefs {
 
     @When("the user enters {string} credentials")
     public void userEntersValidCredentials(String credentials) {
+        if (credentials.equals("expired")) {
+            throw new RuntimeException("Failure ...");
+        }
         System.out.println("the user enters valid credentials");
     }
 
