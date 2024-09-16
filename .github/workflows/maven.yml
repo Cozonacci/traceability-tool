@@ -30,4 +30,5 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
     - name: Upload Cucumber to Zephyr
-      run: shell zephyr.sh
+      run: ./zephyr.sh
+      shell: bash
